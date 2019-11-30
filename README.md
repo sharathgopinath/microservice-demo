@@ -21,7 +21,7 @@ Once the build is successful -
 ```
 > docker-compose up
 ```
-The above command starts the app, it runs EF migrations if it's running for the first time. You may see some errors at first, but it retires again once or twice and it should finally say "Application started". Now you can use postman or similar tools to test the API endpoints.
+The above command starts the app, it runs EF migrations if it's running for the first time. You may see some errors at first, but it retries again once or twice and it should finally say "Application started". Now you can use postman or similar tools to test the API endpoints.
 
 - Alternatively you can run it from Visual Studio, but I have had some trouble sometimes running with VS. Ensure you're running under "Docker Compose" and not "IIS Express" if you're running under Visual Studio (The project has been created using Visual Studio 2019)
 
