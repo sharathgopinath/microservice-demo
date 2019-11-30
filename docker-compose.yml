@@ -1,0 +1,31 @@
+version: '3.5'
+
+networks:
+  localdev:
+    name: localdev
+
+services:
+  microservicedemo:
+    image: microservicedemo
+    build:
+      context: .
+      dockerfile: MicroServiceDemo\Dockerfile
+    restart: always
+    ports:
+      - "44301:443"
+    depends_on:
+      - db-server
+    networks:
+      - localdev
+
+  db-server:
+    image: microsoft/mssql-server-windows-developer:2017-latest
+    container_name: db-server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=1Secure*Password1
+      - MSSQL_TCP_PORT=1433
+    ports:
+      - "1400:1433"
+    networks:
+      - localdev

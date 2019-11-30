@@ -25,6 +25,8 @@ The above command starts the app, it runs EF migrations if it's running for the 
 
 - Alternatively you can run it from Visual Studio, but I have had some trouble sometimes running with VS. Ensure you're running under "Docker Compose" and not "IIS Express" if you're running under Visual Studio (The project has been created using Visual Studio 2019)
 
+- Alternatively you can run it from Visual Studio, but I have had some trouble sometimes running with VS. Ensure you're running under "Docker Compose" and not "IIS Express" if you're running under Visual Studio (The project has been created using Visual Studio 2019)
+
 ## Useful info
 ### Test your SQL server image
 - You can test your SQL server image by starting it using the below command, "test-sql" is the container name
