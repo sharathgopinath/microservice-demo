@@ -46,7 +46,7 @@ The above command starts the app, it runs EF migrations if it's running for the 
 ```
 
 ### About docker-compose.yml
-- The compose file is where you define all the containers that your app requires to run. In this app, it requires 2 containers - 
+- The compose file is where you define all the containers that your app requires to run. In this app, it requires 2 containers
 1. microservicedemo
 2. db-server
 - The compose file in this app also defines 
